@@ -1,0 +1,33 @@
+
+{% extends 'base.html' %}
+{% block content %}
+  <div class="container">
+    <h1>Medo TodoList</h1>
+    <hr>
+    <div>
+      <form action="" method="post">
+        {% csrf_token %}
+        <input class="enter" type="text" name="name" placeholder="write your task">
+      </form>
+        <hr>
+        <ul>
+          {% for task in tasks %}
+            <li class="sh">
+              <div>
+                <input class="box" type="checkbox" style="padding: 5px; margin: 10px;" id="{{ task.id }}" value="{{task.id}}">
+
+                <label name="{{task.id}}" class="m_p" for="{{ task.id }}">{{ task.name }}</label>
+                <strong  class="m_p taskdate" >{{ task.created_date }}</strong>
+                <form  method="post" style="display: inline; margin: 5px; padding: 5px;">
+                  {% csrf_token %}
+                  <button class="m_p" style="background-color: #fd7e14; cursor:pointer; border: none;" name="task_delete" type="submit" id="{{ task.id }}" value="{{task.id}}">
+                    &#10006;
+                  </button>
+                </form>
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+    </div>
+  </div>
+{% endblock %}
