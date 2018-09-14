@@ -10,8 +10,8 @@ this is my first django project
 * you can mark task as active or unactive
 
 ## Install
-
-you do not need to install any thing because all requirements installed in env package
+* you need to install python3
+* you need to install pip package
 
 ## Run the project
 
