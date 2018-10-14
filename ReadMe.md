@@ -17,7 +17,8 @@ this is my first django project
 
 * download the project 
 * open the project in terminal by press `Ctrl-Alt+T`
-* install virtualenv `pip3 install virtualenv` 
+* install virtualenv `pip3 install virtualenv`
+* init your virtualenv `virtualenv todo_env`
 * active virtualenv `source env/bin/activate`
 * install required packages on virtualenv `pip3 install -r requirements.txt`
 * enter to todoList directory `cd todoList`
