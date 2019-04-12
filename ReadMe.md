@@ -21,6 +21,7 @@ this is my first django project
 * init your virtualenv `virtualenv todo_env`
 * active virtualenv `source todo_env/bin/activate`
 * install required packages on virtualenv `pip3 install -r requirements.txt`
+* migrate models to create tables in db `python3 manage.py migrate`
 * run server `python3 manage.py runserver`
 * open browser on this link `http://127.0.0.1:8000/todolist/`
 * to see api for users on website `http://127.0.0.1:8000/users/`
